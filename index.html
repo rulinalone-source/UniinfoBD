@@ -3,14 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>বাংলাদেশের বিশ্ববিদ্যালয় ভর্তি তথ্য</title>
+    <title>BD University Admission Info 2026 | সকল বিশ্ববিদ্যালয়ের ভর্তি তথ্য</title>
     <meta name="google-site-verification" content="rUIH1KCq4IEAUpZtU7Ni3LVJEcs2S7lW3I0gBy1y7-I" />
-    <!-- মেটা টাইটেল ও ডেসক্রিপশন -->
-    <title>BD University Admission Info 2026 | সকল বিশ্ববিদ্যালয়ের ভর্তি তথ্য</title>
-    <meta name="description" content="বাংলাদেশের সকল পাবলিক, বিজ্ঞান ও প্রযুক্তি, প্রকৌশল এবং কৃষি বিশ্ববিদ্যালয়ের ভর্তি যোগ্যতা, বিষয় তালিকা, ফি ও ক্যাম্পাসের তথ্য একসাথে।">
-    <meta name="keywords" content="University Admission BD, UniInfo BD, DU Admission, KU Admission, BUET Admission, বিশ্ববিদ্যালয় ভর্তি তথ্য, গুচ্ছ ভর্তি পরীক্ষা">
-    <link rel="icon" type="image/png" href="https://www.vecteezy.com/vector-art/5908831-university-academy-school-and-course-logo-design-template">
-    <!-- Tailwind CSS (ডিজাইন ফ্রেমওয়ার্ক) -->
+    <meta name="description" content="বাংলাদেশের সকল পাবলিক, বিজ্ঞান ও প্রযুক্তি, প্রকৌশল, কৃষি এবং প্রাইভেট বিশ্ববিদ্যালয়ের ভর্তি যোগ্যতা, বিষয় তালিকা ও ক্যাম্পাসের তথ্য একসাথে।">
+    <meta name="keywords" content="University Admission BD, UniInfo BD, DU Admission, KU Admission, BUET Admission, বিশ্ববিদ্যালয় ভর্তি তথ্য, গুচ্ছ ভর্তি পরীক্ষা">
+    <!-- Tailwind CSS (ডিজাইন ফ্রেমওয়ার্ক) -->
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         .hidden { display: none; }
@@ -31,30 +28,30 @@
     <!-- মূল হোম পেইজ (সার্চ, ফিল্টার এবং ভার্সিটি কার্ড) -->
     <main id="home-page" class="max-w-6xl mx-auto p-4 md:p-6">
         <div class="text-center my-6">
-            <h2 class="text-3xl font-bold text-gray-800 mb-2">বাংলাদেশের বিশ্ববিদ্যালয় সমূহের ভর্তি তথ্য</h2>
-            <p class="text-gray-600">সহজে যেকোনো বিশ্ববিদ্যালয় অনুসন্ধান, গ্রুপ (Science/Commerce/Arts) ও লোকেশন ফিল্টার করুন</p>
+            <h2 class="text-3xl font-bold text-gray-800 mb-2">বাংলাদেশের বিশ্ববিদ্যালয় সমূহের ভর্তি তথ্য</h2>
+            <p class="text-gray-600">সহজে যেকোনো বিশ্ববিদ্যালয় অনুসন্ধান, গ্রুপ (Science/Commerce/Arts) ও লোকেশন ফিল্টার করুন</p>
         </div>
 
         <!-- সার্চ এবং ফিল্টার বার অংশ -->
         <div class="bg-white p-4 md:p-6 rounded-lg shadow-md mb-8">
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-                
+
                 <!-- ১. সার্চ বার -->
                 <div>
                     <label class="block text-xs font-bold text-gray-600 mb-1">স্মার্ট সার্চ</label>
-                    <input type="text" id="search-input" oninput="applyFilters()" 
-                        placeholder="যেমন: Khulna Uni, DU, Buet..." 
+                    <input type="text" id="search-input" oninput="applyFilters()"
+                        placeholder="যেমন: Khulna Uni, DU, Buet..."
                         class="w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
                 </div>
 
                 <!-- ২. শাখা বা গ্রুপ ফিল্টার -->
                 <div>
-                    <label class="block text-xs font-bold text-gray-600 mb-1">পড়াশোনার শাখা (Group)</label>
-                    <select id="stream-filter" onchange="applyFilters()" 
+                    <label class="block text-xs font-bold text-gray-600 mb-1">পড়াশোনার শাখা (Group)</label>
+                    <select id="stream-filter" onchange="applyFilters()"
                         class="w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
                         <option value="all">সকল শাখা (All)</option>
                         <option value="science">বিজ্ঞান (Science)</option>
-                        <option value="commerce">ব্যবসায় শিক্ষা (Commerce)</option>
+                        <option value="commerce">ব্যবসায় শিক্ষা (Commerce)</option>
                         <option value="arts">মানবিক (Arts)</option>
                     </select>
                 </div>
@@ -62,20 +59,21 @@
                 <!-- ৩. ক্যাটাগরি ফিল্টার -->
                 <div>
                     <label class="block text-xs font-bold text-gray-600 mb-1">ক্যাটাগরি</label>
-                    <select id="category-filter" onchange="applyFilters()" 
+                    <select id="category-filter" onchange="applyFilters()"
                         class="w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
                         <option value="all">সকল ক্যাটাগরি</option>
-                        <option value="সাধারণ">সাধারণ বিশ্ববিদ্যালয়</option>
+                        <option value="সাধারণ">সাধারণ বিশ্ববিদ্যালয়</option>
                         <option value="বিজ্ঞান ও প্রযুক্তি">বিজ্ঞান ও প্রযুক্তি</option>
                         <option value="প্রকৌশল">প্রকৌশল (Engineering)</option>
                         <option value="কৃষি">কৃষি (Agriculture)</option>
+                        <option value="প্রাইভেট">প্রাইভেট বিশ্ববিদ্যালয়</option>
                     </select>
                 </div>
 
                 <!-- ৪. লোকেশন বা বিভাগ ফিল্টার -->
                 <div>
                     <label class="block text-xs font-bold text-gray-600 mb-1">লোকেশন (বিভাগ)</label>
-                    <select id="location-filter" onchange="applyFilters()" 
+                    <select id="location-filter" onchange="applyFilters()"
                         class="w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
                         <option value="all">সকল বিভাগ</option>
                         <option value="ঢাকা">ঢাকা</option>
@@ -83,35 +81,35 @@
                         <option value="রাজশাহী">রাজশাহী</option>
                         <option value="চট্টগ্রাম">চট্টগ্রাম</option>
                         <option value="রংপুর">রংপুর</option>
-                        <option value="ময়মনসিংহ">ময়মনসিংহ</option>
+                        <option value="ময়মনসিংহ">ময়মনসিংহ</option>
                         <option value="বরিশাল">বরিশাল</option>
                         <option value="সিলেট">সিলেট</option>
                     </select>
                 </div>
 
             </div>
-            
+
             <div id="result-count" class="mt-4 text-xs font-semibold text-gray-500 text-right"></div>
         </div>
 
-        <!-- বিশ্ববিদ্যালয় গ্রিড লিস্ট -->
+        <!-- বিশ্ববিদ্যালয় গ্রিড লিস্ট -->
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="university-grid"></div>
 
-        <!-- সার্চ রেজাল্ট না পাওয়া গেলে এই মেসেজ দেখাবে -->
+        <!-- সার্চ রেজাল্ট না পাওয়া গেলে এই মেসেজ দেখাবে -->
         <div id="no-results" class="hidden text-center py-12">
-            <p class="text-xl font-semibold text-gray-500">কোনো বিশ্ববিদ্যালয় খুঁজে পাওয়া যায়নি!</p>
-            <p class="text-sm text-gray-400 mt-1">দয়া করে অন্য কোনো কীওয়ার্ড বা ফিল্টার সিলেক্ট করুন।</p>
+            <p class="text-xl font-semibold text-gray-500">কোনো বিশ্ববিদ্যালয় খুঁজে পাওয়া যায়নি!</p>
+            <p class="text-sm text-gray-400 mt-1">দয়া করে অন্য কোনো কীওয়ার্ড বা ফিল্টার সিলেক্ট করুন।</p>
         </div>
     </main>
 
-    <!-- একক বিশ্ববিদ্যালয়ের বিস্তারিত দেখার পেইজ (Dynamic Details View) -->
+    <!-- একক বিশ্ববিদ্যালয়ের বিস্তারিত দেখার পেইজ (Dynamic Details View) -->
     <section id="details-page" class="max-w-5xl mx-auto p-4 md:p-6 hidden">
         <button onclick="showHomePage()" class="mb-4 bg-gray-200 hover:bg-gray-300 text-gray-800 px-4 py-2 rounded font-medium flex items-center gap-2">
             ← পেছনে যান
         </button>
 
         <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-            <!-- বিশ্ববিদ্যালয়ের ছবি -->
+            <!-- বিশ্ববিদ্যালয়ের ছবি -->
             <img id="uni-image" src="" alt="Campus Image" class="w-full h-64 md:h-80 object-cover">
 
             <div class="p-6">
@@ -136,9 +134,9 @@
                     <p id="uni-requirements" class="text-gray-700 whitespace-pre-line leading-relaxed"></p>
                 </div>
 
-                <!-- বিষয় তালিকা -->
+                <!-- বিষয় তালিকা -->
                 <div class="mb-6">
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">📚 বিষয় ও অনুষদসমূহ (Subject & Faculties)</h3>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">📚 বিষয় ও অনুষদসমূহ (Subject & Faculties)</h3>
                     <ul id="uni-subjects" class="grid grid-cols-1 md:grid-cols-2 gap-2 list-disc list-inside text-gray-700"></ul>
                 </div>
             </div>
@@ -154,202 +152,626 @@
     <!-- জাভাস্ক্রিপ্ট সেকশন (এখান থেকে আপনি নতুন ভার্সিটির ডাটা যুক্ত/এডিট করবেন) -->
     <!-- ========================================================================= -->
     <script>
-        
-        /* 
+
+        /*
          =============================================================================
-         📌 নতুন বিশ্ববিদ্যালয় যুক্ত করার গাইডলাইন:
+         📌 নতুন বিশ্ববিদ্যালয় যুক্ত করার গাইডলাইন:
          -----------------------------------------------------------------------------
          নিচের 'universities' লিস্ট বা Array এর ভেতরে একটি নতুন অবজেক্ট যোগ করুন।
-         
-         নতুন ভার্সিটি যুক্ত করার জন্য নিচের ফরম্যাটটি কপি করে পেস্ট করুন:
 
          { 
              id: "আপনার_পছন্দের_ইউনিক_আইডি", 
-             name: "বিশ্ববিদ্যালয়ের নাম (অ্যাক্রোনিম সহ)", 
+             name: "বিশ্ববিদ্যালয়ের নাম (অ্যাক্রোনিম সহ)", 
              acronym: "সংক্ষিপ্ত নাম", 
-             category: "সাধারণ / বিজ্ঞান ও প্রযুক্তি / প্রকৌশল / কৃষি", 
-             division: "ঢাকা / খুলনা / রাজশাহী / চট্টগ্রাম / রংপুর / ময়মনসিংহ / বরিশাল / সিলেট", 
+             category: "সাধারণ / বিজ্ঞান ও প্রযুক্তি / প্রকৌশল / কৃষি / প্রাইভেট", 
+             division: "ঢাকা / খুলনা / রাজশাহী / চট্টগ্রাম / রংপুর / ময়মনসিংহ / বরিশাল / সিলেট", 
              location: "ঠিকানা, জেলা", 
-             streams: ["science", "commerce", "arts"], // যে সকল গ্রুপে ভর্তি হওয়া যায়
-             keywords: ["search_keyword1", "search_keyword2"], // সার্চ করার সহজ নাম
-             image: "অনলাইন_ছবি_লিংক_URL", 
+             streams: ["science", "commerce", "arts"], 
+             keywords: ["search_keyword1", "search_keyword2"], 
+             image: "অনলাইন_ছবি_লিংক_URL (ফাঁকা রাখলে ডিফল্ট ছবি দেখাবে)", 
              description: "ক্যাম্পাস এবং ভার্সিটির বিবরণ...", 
              requirements: "ভর্তি আবেদনের যোগ্যতা...", 
-             subjects: ["বিষয় ১", "বিষয় ২", "বিষয় ৩"] 
+             subjects: ["বিষয় ১", "বিষয় ২", "বিষয় ৩"] 
          },
          =============================================================================
         */
 
+        // যেসব ভার্সিটির image ফাঁকা, সেগুলোতে এই ডিফল্ট ছবি দেখাবে
+        const DEFAULT_IMAGES = [
+            "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=1000&q=80",
+            "https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=1000&q=80",
+            "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1000&q=80",
+            "https://images.unsplash.com/photo-1592280771190-3e2e4d571952?auto=format&fit=crop&w=1000&q=80"
+        ];
+
+        function getImage(uni) {
+            if (uni.image && uni.image.trim() !== "") return uni.image;
+            // আইডি অনুযায়ী একটি নির্দিষ্ট ডিফল্ট ছবি বাছাই
+            let sum = 0;
+            for (let i = 0; i < uni.id.length; i++) sum += uni.id.charCodeAt(i);
+            return DEFAULT_IMAGES[sum % DEFAULT_IMAGES.length];
+        }
+
         const universities = [
-            
-            // --- সাধারণ বিশ্ববিদ্যালয়সমূহ ---
-            { 
-                id: "du", 
-                name: "ঢাকা বিশ্ববিদ্যালয় (DU)", 
-                acronym: "DU", 
-                category: "সাধারণ", 
-                division: "ঢাকা", 
-                location: "শাহবাগ, ঢাকা", 
-                streams: ["science", "commerce", "arts"], 
-                keywords: ["du", "dhaka university", "dhaka uni", "ঢাকা বিশ্ববিদ্যালয়"], 
-                image: "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=1000&q=80", 
-                description: "১৯২১ সালে প্রতিষ্ঠিত ঢাকা বিশ্ববিদ্যালয় বাংলাদেশের প্রাচীনতম এবং অন্যতম প্রধান পাবলিক বিশ্ববিদ্যালয়।", 
-                requirements: "• SSC ও HSC তে ন্যূনতম মোট GPA ৮.০০ - ৯.০০ (ইউনিটভেদে ভিন্ন)।\n• ক, খ, গ ইউনিটের মাধ্যমে ভর্তি পরীক্ষা নেওয়া হয়।", 
-                subjects: ["কম্পিউটার সায়েন্স (Science)", "রসায়ন (Science)", "আইন (Arts)", "ব্যবস্থাপনা (Commerce)", "অর্থনীতি (Arts/Commerce)"] 
+
+            // --- সাধারণ বিশ্ববিদ্যালয়সমূহ ---
+            {
+                id: "du",
+                name: "ঢাকা বিশ্ববিদ্যালয় (DU)",
+                acronym: "DU",
+                category: "সাধারণ",
+                division: "ঢাকা",
+                location: "শাহবাগ, ঢাকা",
+                streams: ["science", "commerce", "arts"],
+                keywords: ["du", "dhaka university", "university of dhaka", "dhaka uni", "ঢাকা বিশ্ববিদ্যালয়", "ঢাবি"],
+                image: "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=1000&q=80",
+                description: "১৯২১ সালে প্রতিষ্ঠিত ঢাকা বিশ্ববিদ্যালয় বাংলাদেশের প্রাচীনতম এবং অন্যতম প্রধান পাবলিক বিশ্ববিদ্যালয়।",
+                requirements: "• SSC ও HSC তে ন্যূনতম মোট GPA ৮.০০ - ৯.০০ (ইউনিটভেদে ভিন্ন)।\n• ক, খ, গ ইউনিটের মাধ্যমে ভর্তি পরীক্ষা নেওয়া হয়।",
+                subjects: ["কম্পিউটার সায়েন্স (Science)", "রসায়ন (Science)", "ফার্মেসি (Science)", "আইন (Arts)", "ব্যবস্থাপনা (Commerce)", "অর্থনীতি (Arts/Commerce)"]
             },
-            { 
-                id: "ku", 
-                name: "খুলনা বিশ্ববিদ্যালয় (KU)", 
-                acronym: "KU", 
-                category: "সাধারণ", 
-                division: "খুলনা", 
-                location: "গল্লামারী, খুলনা", 
-                streams: ["science", "commerce", "arts"], 
-                keywords: ["ku", "khulna university", "khulna uni", "খুলনা বিশ্ববিদ্যালয়"], 
-                image: "https://tbsgraduates.net/wp-content/uploads/2026/08/67c11fe89fbdb08f04ae88d1b23503d4-69248bd51e507-660x372.jpg", 
-                description: "খুলনা বিশ্ববিদ্যালয় একটি রাজনীতিমুক্ত এবং সেশনজটমুক্ত স্বনামধন্য পাবলিক বিশ্ববিদ্যালয়।", 
-                requirements: "• খুলনা বিশ্ববিদ্যালয় নিজস্ব একক ভর্তি পরীক্ষার মাধ্যমে শিক্ষার্থী ভর্তি নেয়।\n• বিজ্ঞান স্কুলের জন্য মোট GPA ৮.০০ বা তদূর্ধ্ব আবশ্যক।", 
-                subjects: ["ইলেকট্রনিক্স অ্যান্ড কমিউনিকেশন ECE (Science)", "রসায়ন (Science)", "ফার্মেসি (Science)", "চারুকলা (Arts)", "ব্যবস্থাপনা (Commerce)"] 
+            {
+                id: "ku",
+                name: "খুলনা বিশ্ববিদ্যালয় (KU)",
+                acronym: "KU",
+                category: "সাধারণ",
+                division: "খুলনা",
+                location: "গল্লামারী, খুলনা",
+                streams: ["science", "commerce", "arts"],
+                keywords: ["ku", "khulna university", "khulna uni", "খুলনা বিশ্ববিদ্যালয়", "খুবি"],
+                image: "https://tbsgraduates.net/wp-content/uploads/2026/08/67c11fe89fbdb08f04ae88d1b23503d4-69248bd51e507-660x372.jpg",
+                description: "খুলনা বিশ্ববিদ্যালয় একটি রাজনীতিমুক্ত এবং সেশনজটমুক্ত স্বনামধন্য পাবলিক বিশ্ববিদ্যালয়।",
+                requirements: "• খুলনা বিশ্ববিদ্যালয় নিজস্ব একক ভর্তি পরীক্ষার মাধ্যমে শিক্ষার্থী ভর্তি নেয়।\n• বিজ্ঞান স্কুলের জন্য মোট GPA ৮.০০ বা তদূর্ধ্ব আবশ্যক।",
+                subjects: ["ইলেকট্রনিক্স অ্যান্ড কমিউনিকেশন ECE (Science)", "রসায়ন (Science)", "ফার্মেসি (Science)", "চারুকলা (Arts)", "ব্যবস্থাপনা (Commerce)"]
             },
-             {
-    id: "mbstu",
-    name: "মাওলানা ভাসানী বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয় (MBSTU)",
-    acronym: "MBSTU",
-    category: "প্রকৌশল ও প্রযুক্তি",
-    division: "ঢাকা",
-    location: "সন্তোষ, টাঙ্গাইল",
-    streams: ["science"],
-    keywords: ["mbstu", "mawlana bhashani", "bhashani university", "মাওলানা ভাসানী", "টাঙ্গাইল"],
-    image: "",
-    description: "মাওলানা ভাসানী বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয় টাঙ্গাইলের সন্তোষে অবস্থিত একটি সরকারি বিজ্ঞান ও প্রযুক্তিভিত্তিক বিশ্ববিদ্যালয়।",
-    requirements: "• নিজস্ব ভর্তি পরীক্ষার মাধ্যমে শিক্ষার্থী ভর্তি নেওয়া হয়।\n• GPA ও অন্যান্য শর্ত প্রতি বছরের ভর্তি বিজ্ঞপ্তিতে দেখুন।",
-    subjects: ["কম্পিউটার সায়েন্স অ্যান্ড ইঞ্জিনিয়ারিং CSE (Science)", "ইনফরমেশন অ্যান্ড কমিউনিকেশন টেকনোলজি ICT (Science)", "ফার্মেসি (Science)", "বায়োটেকনোলজি অ্যান্ড জেনেটিক ইঞ্জিনিয়ারিং (Science)"]
-  },
-            { 
-                id: "ru", 
-                name: "রাজশাহী বিশ্ববিদ্যালয় (RU)", 
-                acronym: "RU", 
-                category: "সাধারণ", 
-                division: "রাজশাহী", 
-                location: "মতিহার, রাজশাহী", 
-                streams: ["science", "commerce", "arts"], 
-                keywords: ["ru", "rajshahi university", "rajshahi uni", "রাজশাহী বিশ্ববিদ্যালয়"], 
-                image: "https://images.unsplash.com/photo-1592280771190-3e2e4d571952?auto=format&fit=crop&w=1000&q=80", 
-                description: "রাজশাহী বিশ্ববিদ্যালয় উত্তরবঙ্গের সবচেয়ে বড় এবং চমৎকার সবুজ ক্যাম্পাসের বিশ্ববিদ্যালয়।", 
-                requirements: "• SSC ও HSC তে মোট GPA ৭.০০ - ৮.০০ এর মধ্যে থাকতে হবে।", 
-                subjects: ["পদার্থবিজ্ঞান (Science)", "রসায়ন (Science)", "আইন বিভাগ (Arts)", "উদ্ভিদবিজ্ঞান (Science)", "বিবিএ (Commerce)"] 
+            {
+                id: "ru",
+                name: "রাজশাহী বিশ্ববিদ্যালয় (RU)",
+                acronym: "RU",
+                category: "সাধারণ",
+                division: "রাজশাহী",
+                location: "মতিহার, রাজশাহী",
+                streams: ["science", "commerce", "arts"],
+                keywords: ["ru", "rajshahi university", "university of rajshahi", "rajshahi uni", "রাজশাহী বিশ্ববিদ্যালয়", "রাবি"],
+                image: "https://images.unsplash.com/photo-1592280771190-3e2e4d571952?auto=format&fit=crop&w=1000&q=80",
+                description: "রাজশাহী বিশ্ববিদ্যালয় উত্তরবঙ্গের সবচেয়ে বড় এবং চমৎকার সবুজ ক্যাম্পাসের বিশ্ববিদ্যালয়।",
+                requirements: "• SSC ও HSC তে মোট GPA ৭.০০ - ৮.০০ এর মধ্যে থাকতে হবে।",
+                subjects: ["পদার্থবিজ্ঞান (Science)", "রসায়ন (Science)", "আইন বিভাগ (Arts)", "উদ্ভিদবিজ্ঞান (Science)", "বিবিএ (Commerce)"]
             },
-            { 
-                id: "cu", 
-                name: "চট্টগ্রাম বিশ্ববিদ্যালয় (CU)", 
-                acronym: "CU", 
-                category: "সাধারণ", 
-                division: "চট্টগ্রাম", 
-                location: "হাঠহাজারী, চট্টগ্রাম", 
-                streams: ["science", "commerce", "arts"], 
-                keywords: ["cu", "chittagong university", "chittagong uni", "চট্টগ্রাম বিশ্ববিদ্যালয়"], 
-                image: "https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=1000&q=80", 
-                description: "সবুজ পাহাড় পরিবেষ্টিত চমৎকার প্রাকৃতিক সৌন্দর্যের ক্যাম্পাস।", 
-                requirements: "• শাখা অনুযায়ী মোট GPA ৭.৫০ - ৮.৫০ প্রয়োজন।", 
-                subjects: ["মেরিন সায়েন্স (Science)", "কম্পিউটার সায়েন্স (Science)", "অর্থনীতি (Arts)", "আইন (Arts)", "ফিন্যান্স (Commerce)"] 
+            {
+                id: "cu",
+                name: "চট্টগ্রাম বিশ্ববিদ্যালয় (CU)",
+                acronym: "CU",
+                category: "সাধারণ",
+                division: "চট্টগ্রাম",
+                location: "হাটহাজারী, চট্টগ্রাম",
+                streams: ["science", "commerce", "arts"],
+                keywords: ["cu", "chittagong university", "university of chittagong", "chittagong uni", "চট্টগ্রাম বিশ্ববিদ্যালয়", "চবি"],
+                image: "https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=1000&q=80",
+                description: "সবুজ পাহাড় পরিবেষ্টিত চমৎকার প্রাকৃতিক সৌন্দর্যের ক্যাম্পাস।",
+                requirements: "• শাখা অনুযায়ী মোট GPA ৭.৫০ - ৮.৫০ প্রয়োজন।",
+                subjects: ["মেরিন সায়েন্স (Science)", "কম্পিউটার সায়েন্স (Science)", "অর্থনীতি (Arts)", "আইন (Arts)", "ফিন্যান্স (Commerce)"]
+            },
+            {
+                id: "iu",
+                name: "ইসলামী বিশ্ববিদ্যালয় (IU)",
+                acronym: "IU",
+                category: "সাধারণ",
+                division: "খুলনা",
+                location: "শান্তিডাঙ্গা, কুষ্টিয়া",
+                streams: ["science", "commerce", "arts"],
+                keywords: ["iu", "islamic university", "islamic university kushtia", "ইসলামী বিশ্ববিদ্যালয়", "কুষ্টিয়া", "ইবি"],
+                image: "",
+                description: "ইসলামী বিশ্ববিদ্যালয় কুষ্টিয়ায় অবস্থিত একটি সরকারি বিশ্ববিদ্যালয়।",
+                requirements: "• নিজস্ব ভর্তি পরীক্ষার মাধ্যমে শিক্ষার্থী ভর্তি নেওয়া হয়।\n• GPA শর্ত ইউনিট অনুযায়ী ভর্তি বিজ্ঞপ্তিতে দেখুন।",
+                subjects: ["কম্পিউটার সায়েন্স অ্যান্ড ইঞ্জিনিয়ারিং CSE (Science)", "ফার্মেসি (Science)", "ব্যবস্থাপনা (Commerce)", "বাংলা (Arts)", "ইসলামিক স্টাডিজ (Arts)"]
+            },
+            {
+                id: "brur",
+                name: "বেগম রোকেয়া বিশ্ববিদ্যালয় (BRUR)",
+                acronym: "BRUR",
+                category: "সাধারণ",
+                division: "রংপুর",
+                location: "রংপুর",
+                streams: ["science", "commerce", "arts"],
+                keywords: ["brur", "begum rokeya university", "begum rokeya", "বেগম রোকেয়া বিশ্ববিদ্যালয়", "রংপুর", "বেরোবি"],
+                image: "",
+                description: "বেগম রোকেয়া বিশ্ববিদ্যালয় রংপুরে অবস্থিত উত্তরবঙ্গের একটি সরকারি বিশ্ববিদ্যালয়।",
+                requirements: "• নিজস্ব ভর্তি পরীক্ষার মাধ্যমে শিক্ষার্থী ভর্তি নেওয়া হয়।\n• GPA শর্ত ইউনিট অনুযায়ী ভর্তি বিজ্ঞপ্তিতে দেখুন।",
+                subjects: ["কম্পিউটার সায়েন্স অ্যান্ড ইঞ্জিনিয়ারিং CSE (Science)", "পদার্থবিজ্ঞান (Science)", "ব্যবস্থাপনা (Commerce)", "বাংলা (Arts)", "ইংরেজি (Arts)"]
+            },
+            {
+                id: "cou",
+                name: "কুমিল্লা বিশ্ববিদ্যালয় (CoU)",
+                acronym: "CoU",
+                category: "সাধারণ",
+                division: "চট্টগ্রাম",
+                location: "কোটবাড়ী, কুমিল্লা",
+                streams: ["science", "commerce", "arts"],
+                keywords: ["cou", "comilla university", "cumilla university", "কুমিল্লা বিশ্ববিদ্যালয়", "কুবি"],
+                image: "",
+                description: "কুমিল্লা বিশ্ববিদ্যালয় কোটবাড়ীতে অবস্থিত একটি সরকারি বিশ্ববিদ্যালয়।",
+                requirements: "• নিজস্ব ভর্তি পরীক্ষার মাধ্যমে শিক্ষার্থী ভর্তি নেওয়া হয়।\n• GPA শর্ত ইউনিট অনুযায়ী ভর্তি বিজ্ঞপ্তিতে দেখুন।",
+                subjects: ["কম্পিউটার সায়েন্স অ্যান্ড ইঞ্জিনিয়ারিং CSE (Science)", "পদার্থবিজ্ঞান (Science)", "হিসাববিজ্ঞান (Commerce)", "বাংলা (Arts)", "ইংরেজি (Arts)"]
             },
 
-            // --- প্রকৌশল (Engineering) বিশ্ববিদ্যালয়সমূহ ---
-            { 
-                id: "buet", 
-                name: "বাংলাদেশ প্রকৌশল বিশ্ববিদ্যালয় (BUET)", 
-                acronym: "BUET", 
-                category: "প্রকৌশল", 
-                division: "ঢাকা", 
-                location: "পলাশী, ঢাকা", 
-                streams: ["science"], 
-                keywords: ["buet", "buet uni", "buet dhaka", "বুয়েট"], 
-                image: "https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=1000&q=80", 
-                description: "দেশের শীর্ষস্থানীয় প্রকৌশল ও প্রযুক্তি শিক্ষার অন্যতম শ্রেষ্ঠ কেন্দ্র।", 
-                requirements: "• SSC ও HSC তে পদার্থ, রসায়ন ও গণিতে জিপিএ ৫.০০ আবশ্যক।\n• প্রাক-নির্বাচনী ও মূল লিখিত পরীক্ষা।", 
-                subjects: ["CSE (Science)", "EEE (Science)", "Civil Engineering (Science)", "Mechanical Engineering (Science)", "Architecture (Science)"] 
+            // --- প্রকৌশল (Engineering) বিশ্ববিদ্যালয়সমূহ ---
+            {
+                id: "buet",
+                name: "বাংলাদেশ প্রকৌশল বিশ্ববিদ্যালয় (BUET)",
+                acronym: "BUET",
+                category: "প্রকৌশল",
+                division: "ঢাকা",
+                location: "পলাশী, ঢাকা",
+                streams: ["science"],
+                keywords: ["buet", "bangladesh university of engineering and technology", "buet dhaka", "বুয়েট"],
+                image: "https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=1000&q=80",
+                description: "দেশের শীর্ষস্থানীয় প্রকৌশল ও প্রযুক্তি শিক্ষার অন্যতম শ্রেষ্ঠ কেন্দ্র।",
+                requirements: "• SSC ও HSC তে পদার্থ, রসায়ন ও গণিতে জিপিএ ৫.০০ আবশ্যক।\n• প্রাক-নির্বাচনী ও মূল লিখিত পরীক্ষা।",
+                subjects: ["CSE (Science)", "EEE (Science)", "Civil Engineering (Science)", "Mechanical Engineering (Science)", "Architecture (Science)"]
             },
-            { 
-                id: "kuet", 
-                name: "খুলনা প্রকৌশল ও প্রযুক্তি বিশ্ববিদ্যালয় (KUET)", 
-                acronym: "KUET", 
-                category: "প্রকৌশল", 
-                division: "খুলনা", 
-                location: "ফুলবাড়ী গেট, খুলনা", 
-                streams: ["science"], 
-                keywords: ["kuet", "kuet uni", "khulna kuet", "কুয়েট"], 
-                image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1000&q=80", 
-                description: "দক্ষিণ-পশ্চিমাঞ্চলের প্রধান ইঞ্জিনিয়ারিং ক্যাম্পাস।", 
-                requirements: "• প্রকৌশল গুচ্ছ পরীক্ষার মাধ্যমে ভর্তি নেওয়া হয়।", 
-                subjects: ["CSE (Science)", "EEE (Science)", "ECE (Science)", "BME (Science)", "Civil Engineering (Science)"] 
+            {
+                id: "kuet",
+                name: "খুলনা প্রকৌশল ও প্রযুক্তি বিশ্ববিদ্যালয় (KUET)",
+                acronym: "KUET",
+                category: "প্রকৌশল",
+                division: "খুলনা",
+                location: "ফুলবাড়ী গেট, খুলনা",
+                streams: ["science"],
+                keywords: ["kuet", "khulna university of engineering and technology", "khulna kuet", "কুয়েট"],
+                image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1000&q=80",
+                description: "দক্ষিণ-পশ্চিমাঞ্চলের প্রধান ইঞ্জিনিয়ারিং ক্যাম্পাস।",
+                requirements: "• প্রকৌশল গুচ্ছ পরীক্ষার মাধ্যমে ভর্তি নেওয়া হয়।",
+                subjects: ["CSE (Science)", "EEE (Science)", "ECE (Science)", "BME (Science)", "Civil Engineering (Science)"]
             },
-            { 
-                id: "ruet", 
-                name: "রাজশাহী প্রকৌশল ও প্রযুক্তি বিশ্ববিদ্যালয় (RUET)", 
-                acronym: "RUET", 
-                category: "প্রকৌশল", 
-                division: "রাজশাহী", 
-                location: "মতিহার, রাজশাহী", 
-                streams: ["science"], 
-                keywords: ["ruet", "ruet uni", "rajshahi ruet", "রুয়েট"], 
-                image: "https://images.unsplash.com/photo-1592280771190-3e2e4d571952?auto=format&fit=crop&w=1000&q=80", 
-                description: "উত্তরবঙ্গের শীর্ষ ইঞ্জিনিয়ারিং বিশ্ববিদ্যালয়।", 
-                requirements: "• প্রকৌশল গুচ্ছ ভর্তি পরীক্ষা।", 
-                subjects: ["CSE (Science)", "EEE (Science)", "ECE (Science)", "Civil (Science)", "Mechanical (Science)"] 
+            {
+                id: "ruet",
+                name: "রাজশাহী প্রকৌশল ও প্রযুক্তি বিশ্ববিদ্যালয় (RUET)",
+                acronym: "RUET",
+                category: "প্রকৌশল",
+                division: "রাজশাহী",
+                location: "কাজলা, রাজশাহী",
+                streams: ["science"],
+                keywords: ["ruet", "rajshahi university of engineering and technology", "rajshahi ruet", "রুয়েট"],
+                image: "https://images.unsplash.com/photo-1592280771190-3e2e4d571952?auto=format&fit=crop&w=1000&q=80",
+                description: "উত্তরবঙ্গের শীর্ষ ইঞ্জিনিয়ারিং বিশ্ববিদ্যালয়।",
+                requirements: "• প্রকৌশল গুচ্ছ ভর্তি পরীক্ষা।",
+                subjects: ["CSE (Science)", "EEE (Science)", "ECE (Science)", "Civil (Science)", "Mechanical (Science)"]
             },
-
-            // --- বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয়সমূহ ---
-            { 
-                id: "sust", 
-                name: "শাহজালাল বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয় (SUST)", 
-                acronym: "SUST", 
-                category: "বিজ্ঞান ও প্রযুক্তি", 
-                division: "সিলেট", 
-                location: "কুমারগাঁও, সিলেট", 
-                streams: ["science", "commerce", "arts"], 
-                keywords: ["sust", "sust uni", "shahjalal university", "শাহজালাল বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয়"], 
-                image: "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=1000&q=80", 
-                description: "দেশের প্রথম এবং সেরা বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয়।", 
-                requirements: "• বিজ্ঞান বিভাগে ভালো জিপিএ এবং নির্ধারিত ভর্তি পরীক্ষা।", 
-                subjects: ["Software Engineering (Science)", "CSE (Science)", "Physics (Science)", "সমাজকর্ম (Arts)", "ব্যবসায় প্রশাসন (Commerce)"] 
+            {
+                id: "cuet",
+                name: "চট্টগ্রাম প্রকৌশল ও প্রযুক্তি বিশ্ববিদ্যালয় (CUET)",
+                acronym: "CUET",
+                category: "প্রকৌশল",
+                division: "চট্টগ্রাম",
+                location: "রাউজান, চট্টগ্রাম",
+                streams: ["science"],
+                keywords: ["cuet", "chittagong university of engineering and technology", "চট্টগ্রাম প্রকৌশল", "চুয়েট"],
+                image: "",
+                description: "চুয়েট রাউজানে অবস্থিত একটি সরকারি প্রকৌশল বিশ্ববিদ্যালয়।",
+                requirements: "• প্রকৌশল গুচ্ছ বা নিজস্ব ভর্তি পরীক্ষার মাধ্যমে ভর্তি নেওয়া হয়, বিস্তারিত ভর্তি বিজ্ঞপ্তিতে দেখুন।\n• গণিত, পদার্থ ও রসায়নে ভালো ফলাফল প্রয়োজন।",
+                subjects: ["CSE (Science)", "EEE (Science)", "Mechanical Engineering (Science)", "Civil Engineering (Science)"]
             },
-            { 
-                id: "just", 
-                name: "যশোর বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয় (JUST)", 
-                acronym: "JUST", 
-                category: "বিজ্ঞান ও প্রযুক্তি", 
-                division: "খুলনা", 
-                location: "কোতোয়ালী, যশোর", 
-                streams: ["science", "commerce"], 
-                keywords: ["just", "jessore uni", "jashore uni", "যশোর বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয়"], 
-                image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1000&q=80", 
-                description: "উচ্চতর গবেষণা ও উন্নত ল্যাবের জন্য পরিচিত বিশ্ববিদ্যালয়।", 
-                requirements: "• বিজ্ঞান ও নির্ধারিত শাখা থেকে আবেদন গ্রহণ।", 
-                subjects: ["GEBT (Science)", "CSE (Science)", "Chemical Engineering (Science)", "Accounting (Commerce)"] 
+            {
+                id: "duet",
+                name: "ঢাকা প্রকৌশল ও প্রযুক্তি বিশ্ববিদ্যালয় (DUET)",
+                acronym: "DUET",
+                category: "প্রকৌশল",
+                division: "ঢাকা",
+                location: "গাজীপুর",
+                streams: ["science"],
+                keywords: ["duet", "dhaka university of engineering and technology", "ঢাকা প্রকৌশল", "ডুয়েট", "গাজীপুর"],
+                image: "",
+                description: "ডুয়েট গাজীপুরে অবস্থিত একটি সরকারি প্রকৌশল বিশ্ববিদ্যালয়।",
+                requirements: "• প্রকৌশল গুচ্ছ বা নিজস্ব ভর্তি পরীক্ষার মাধ্যমে ভর্তি নেওয়া হয়, বিস্তারিত ভর্তি বিজ্ঞপ্তিতে দেখুন।\n• গণিত, পদার্থ ও রসায়নে ভালো ফলাফল প্রয়োজন।",
+                subjects: ["CSE (Science)", "EEE (Science)", "Mechanical Engineering (Science)", "Civil Engineering (Science)"]
             },
 
-            // --- কৃষি বিশ্ববিদ্যালয়সমূহ ---
-            { 
-                id: "bau", 
-                name: "বাংলাদেশ কৃষি বিশ্ববিদ্যালয় (BAU)", 
-                acronym: "BAU", 
-                category: "কৃষি", 
-                division: "ময়মনসিংহ", 
-                location: "কোতোয়ালী, ময়মনসিংহ", 
-                streams: ["science"], 
-                keywords: ["bau", "bau mymensingh", "agricultural university", "বাকৃবি"], 
-                image: "https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=1000&q=80", 
-                description: "দক্ষিণ এশিয়ার অন্যতম সেরা ও সমৃদ্ধ কৃষি বিশ্ববিদ্যালয়।", 
-                requirements: "• কৃষি গুচ্ছ ভর্তি পরীক্ষার মাধ্যমে ভর্তি নেওয়া হয়।", 
-                subjects: ["Veterinary Science (Science)", "Agriculture (Science)", "Fisheries (Science)", "Agricultural Engineering (Science)"] 
+            // --- বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয়সমূহ ---
+            {
+                id: "sust",
+                name: "শাহজালাল বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয় (SUST)",
+                acronym: "SUST",
+                category: "বিজ্ঞান ও প্রযুক্তি",
+                division: "সিলেট",
+                location: "কুমারগাঁও, সিলেট",
+                streams: ["science", "commerce", "arts"],
+                keywords: ["sust", "sust uni", "shahjalal university", "শাহজালাল বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয়", "শাবিপ্রবি"],
+                image: "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=1000&q=80",
+                description: "দেশের প্রথম এবং সেরা বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয়।",
+                requirements: "• বিজ্ঞান বিভাগে ভালো জিপিএ এবং নির্ধারিত ভর্তি পরীক্ষা।",
+                subjects: ["Software Engineering (Science)", "CSE (Science)", "Physics (Science)", "সমাজকর্ম (Arts)", "ব্যবসায় প্রশাসন (Commerce)"]
+            },
+            {
+                id: "just",
+                name: "যশোর বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয় (JUST)",
+                acronym: "JUST",
+                category: "বিজ্ঞান ও প্রযুক্তি",
+                division: "খুলনা",
+                location: "কোতোয়ালী, যশোর",
+                streams: ["science", "commerce"],
+                keywords: ["just", "jessore uni", "jashore uni", "যশোর বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয়", "যবিপ্রবি"],
+                image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1000&q=80",
+                description: "উচ্চতর গবেষণা ও উন্নত ল্যাবের জন্য পরিচিত বিশ্ববিদ্যালয়।",
+                requirements: "• বিজ্ঞান ও নির্ধারিত শাখা থেকে আবেদন গ্রহণ।",
+                subjects: ["GEBT (Science)", "CSE (Science)", "Chemical Engineering (Science)", "Accounting (Commerce)"]
+            },
+            {
+                id: "mbstu",
+                name: "মাওলানা ভাসানী বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয় (MBSTU)",
+                acronym: "MBSTU",
+                category: "বিজ্ঞান ও প্রযুক্তি",
+                division: "ঢাকা",
+                location: "সন্তোষ, টাঙ্গাইল",
+                streams: ["science"],
+                keywords: ["mbstu", "mawlana bhashani", "bhashani university", "মাওলানা ভাসানী", "টাঙ্গাইল"],
+                image: "",
+                description: "মাওলানা ভাসানী বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয় টাঙ্গাইলের সন্তোষে অবস্থিত একটি সরকারি বিজ্ঞান ও প্রযুক্তিভিত্তিক বিশ্ববিদ্যালয়।",
+                requirements: "• নিজস্ব ভর্তি পরীক্ষার মাধ্যমে শিক্ষার্থী ভর্তি নেওয়া হয়।\n• GPA ও অন্যান্য শর্ত প্রতি বছরের ভর্তি বিজ্ঞপ্তিতে দেখুন।",
+                subjects: ["কম্পিউটার সায়েন্স অ্যান্ড ইঞ্জিনিয়ারিং CSE (Science)", "ইনফরমেশন অ্যান্ড কমিউনিকেশন টেকনোলজি ICT (Science)", "ফার্মেসি (Science)", "বায়োটেকনোলজি অ্যান্ড জেনেটিক ইঞ্জিনিয়ারিং (Science)"]
+            },
+            {
+                id: "pust",
+                name: "পাবনা বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয় (PUST)",
+                acronym: "PUST",
+                category: "বিজ্ঞান ও প্রযুক্তি",
+                division: "রাজশাহী",
+                location: "পাবনা",
+                streams: ["science", "commerce"],
+                keywords: ["pust", "pabna university", "pabna science and technology", "পাবনা বিজ্ঞান", "পাবিপ্রবি"],
+                image: "",
+                description: "পাবনা বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয় পাবনায় অবস্থিত একটি সরকারি বিজ্ঞান ও প্রযুক্তিভিত্তিক বিশ্ববিদ্যালয়।",
+                requirements: "• নিজস্ব ভর্তি পরীক্ষার মাধ্যমে শিক্ষার্থী ভর্তি নেওয়া হয়।\n• GPA শর্ত ইউনিট অনুযায়ী ভর্তি বিজ্ঞপ্তিতে দেখুন।",
+                subjects: ["কম্পিউটার সায়েন্স অ্যান্ড ইঞ্জিনিয়ারিং CSE (Science)", "ইলেকট্রিক্যাল অ্যান্ড ইলেকট্রনিক ইঞ্জিনিয়ারিং EEE (Science)", "ফার্মেসি (Science)", "ব্যবস্থাপনা (Commerce)"]
+            },
+            {
+                id: "pstu",
+                name: "পটুয়াখালী বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয় (PSTU)",
+                acronym: "PSTU",
+                category: "বিজ্ঞান ও প্রযুক্তি",
+                division: "বরিশাল",
+                location: "দুমকি, পটুয়াখালী",
+                streams: ["science"],
+                keywords: ["pstu", "patuakhali university", "patuakhali science and technology", "পটুয়াখালী বিজ্ঞান", "পবিপ্রবি"],
+                image: "",
+                description: "পটুয়াখালী বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয় দুমকিতে অবস্থিত কৃষি ও প্রযুক্তিভিত্তিক সরকারি বিশ্ববিদ্যালয়।",
+                requirements: "• ভর্তি পদ্ধতি (নিজস্ব বা গুচ্ছ) বছর অনুযায়ী ভিন্ন হতে পারে, অফিসিয়াল বিজ্ঞপ্তি দেখুন।\n• বিজ্ঞান বিভাগ থেকে উত্তীর্ণ হতে হবে।",
+                subjects: ["কৃষি (Science)", "কম্পিউটার সায়েন্স অ্যান্ড ইঞ্জিনিয়ারিং CSE (Science)", "ফিশারিজ (Science)", "ফার্মেসি (Science)"]
+            },
+
+            // --- কৃষি বিশ্ববিদ্যালয়সমূহ ---
+            {
+                id: "bau",
+                name: "বাংলাদেশ কৃষি বিশ্ববিদ্যালয় (BAU)",
+                acronym: "BAU",
+                category: "কৃষি",
+                division: "ময়মনসিংহ",
+                location: "কোতোয়ালী, ময়মনসিংহ",
+                streams: ["science"],
+                keywords: ["bau", "bau mymensingh", "agricultural university", "বাকৃবি"],
+                image: "https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=1000&q=80",
+                description: "দক্ষিণ এশিয়ার অন্যতম সেরা ও সমৃদ্ধ কৃষি বিশ্ববিদ্যালয়।",
+                requirements: "• কৃষি গুচ্ছ ভর্তি পরীক্ষার মাধ্যমে ভর্তি নেওয়া হয়।",
+                subjects: ["Veterinary Science (Science)", "Agriculture (Science)", "Fisheries (Science)", "Agricultural Engineering (Science)"]
+            },
+            {
+                id: "sau",
+                name: "সিলেট কৃষি বিশ্ববিদ্যালয় (SAU)",
+                acronym: "SAU",
+                category: "কৃষি",
+                division: "সিলেট",
+                location: "টিলাগড়, সিলেট",
+                streams: ["science"],
+                keywords: ["sau", "sylhet agricultural university", "সিলেট কৃষি", "কৃষি বিশ্ববিদ্যালয়"],
+                image: "",
+                description: "সিলেট কৃষি বিশ্ববিদ্যালয় কৃষি ও সংশ্লিষ্ট বিষয়ে শিক্ষাদানকারী একটি সরকারি বিশ্ববিদ্যালয়।",
+                requirements: "• কৃষি গুচ্ছ ভর্তি পরীক্ষার মাধ্যমে ভর্তি নেওয়া হয়, বিজ্ঞপ্তি দেখুন।\n• বিজ্ঞান বিভাগ থেকে উত্তীর্ণ হতে হবে।",
+                subjects: ["কৃষি (Science)", "ভেটেরিনারি সায়েন্স (Science)", "ফিশারিজ (Science)", "অ্যানিমেল সায়েন্স (Science)"]
+            },
+
+            // --- প্রাইভেট বিশ্ববিদ্যালয়সমূহ ---
+            {
+                id: "seu",
+                name: "সাউথইস্ট ইউনিভার্সিটি (SEU)",
+                acronym: "SEU",
+                category: "প্রাইভেট",
+                division: "ঢাকা",
+                location: "বনানী, ঢাকা",
+                streams: ["science", "commerce", "arts"],
+                keywords: ["seu", "southeast university", "south east university", "সাউথইস্ট"],
+                image: "",
+                description: "সাউথইস্ট ইউনিভার্সিটি ঢাকার বনানীতে অবস্থিত একটি স্বনামধন্য প্রাইভেট বিশ্ববিদ্যালয়।",
+                requirements: "• নিজস্ব ভর্তি প্রক্রিয়ার মাধ্যমে ভর্তি নেওয়া হয়।\n• ন্যূনতম GPA ও ওয়েভার সুবিধা অফিসিয়াল ওয়েবসাইটে দেখুন।",
+                subjects: ["কম্পিউটার সায়েন্স অ্যান্ড ইঞ্জিনিয়ারিং CSE (Science)", "ইলেকট্রিক্যাল অ্যান্ড ইলেকট্রনিক ইঞ্জিনিয়ারিং EEE (Science)", "সিভিল ইঞ্জিনিয়ারিং (Science)", "ব্যবসায় প্রশাসন BBA (Commerce)", "ইংরেজি (Arts)"]
+            },
+            {
+                id: "bracu",
+                name: "ব্র্যাক বিশ্ববিদ্যালয় (BRAC University)",
+                acronym: "BRACU",
+                category: "প্রাইভেট",
+                division: "ঢাকা",
+                location: "মেরুল বাড্ডা, ঢাকা",
+                streams: ["science", "commerce", "arts"],
+                keywords: ["bracu", "brac university", "brac", "ব্র্যাক বিশ্ববিদ্যালয়"],
+                image: "",
+                description: "ব্র্যাক বিশ্ববিদ্যালয় ঢাকার একটি স্বনামধন্য প্রাইভেট বিশ্ববিদ্যালয়।",
+                requirements: "• নিজস্ব ভর্তি পরীক্ষার মাধ্যমে শিক্ষার্থী ভর্তি নেওয়া হয়।\n• ন্যূনতম GPA ও স্কলারশিপের শর্ত অফিসিয়াল ওয়েবসাইটে দেখুন।",
+                subjects: ["কম্পিউটার সায়েন্স অ্যান্ড ইঞ্জিনিয়ারিং CSE (Science)", "ইলেকট্রিক্যাল অ্যান্ড ইলেকট্রনিক ইঞ্জিনিয়ারিং EEE (Science)", "ব্যবসায় প্রশাসন BBA (Commerce)", "ইংরেজি (Arts)"]
+            },
+            {
+                id: "iiuc",
+                name: "ইন্টারন্যাশনাল ইসলামিক ইউনিভার্সিটি চট্টগ্রাম (IIUC)",
+                acronym: "IIUC",
+                category: "প্রাইভেট",
+                division: "চট্টগ্রাম",
+                location: "কুমিরা, সীতাকুণ্ড, চট্টগ্রাম",
+                streams: ["science", "commerce", "arts"],
+                keywords: ["iiuc", "international islamic university chittagong", "ইন্টারন্যাশনাল ইসলামিক", "আইআইইউসি"],
+                image: "",
+                description: "আইআইইউসি চট্টগ্রামে অবস্থিত একটি ইসলামী মূল্যবোধভিত্তিক প্রাইভেট বিশ্ববিদ্যালয়।",
+                requirements: "• নিজস্ব ভর্তি প্রক্রিয়ার মাধ্যমে ভর্তি নেওয়া হয়।\n• ন্যূনতম GPA ও ওয়েভার সুবিধা অফিসিয়াল ওয়েবসাইটে দেখুন।",
+                subjects: ["কম্পিউটার সায়েন্স অ্যান্ড ইঞ্জিনিয়ারিং CSE (Science)", "ইলেকট্রিক্যাল অ্যান্ড ইলেকট্রনিক ইঞ্জিনিয়ারিং EEE (Science)", "ব্যবসায় প্রশাসন BBA (Commerce)", "ইসলামিক স্টাডিজ (Arts)"]
+            },
+            {
+                id: "uiu",
+                name: "ইউনাইটেড ইন্টারন্যাশনাল ইউনিভার্সিটি (UIU)",
+                acronym: "UIU",
+                category: "প্রাইভেট",
+                division: "ঢাকা",
+                location: "ইউনাইটেড সিটি, মাদানী এভিনিউ, বাড্ডা, ঢাকা",
+                streams: ["science", "commerce", "arts"],
+                keywords: ["uiu", "united international university", "ইউনাইটেড ইন্টারন্যাশনাল"],
+                image: "",
+                description: "ইউআইইউ ঢাকার একটি স্বনামধন্য প্রাইভেট বিশ্ববিদ্যালয়।",
+                requirements: "• নিজস্ব ভর্তি পরীক্ষার মাধ্যমে শিক্ষার্থী ভর্তি নেওয়া হয়।\n• ন্যূনতম GPA ও স্কলারশিপের শর্ত অফিসিয়াল ওয়েবসাইটে দেখুন।",
+                subjects: ["কম্পিউটার সায়েন্স অ্যান্ড ইঞ্জিনিয়ারিং CSE (Science)", "ইলেকট্রিক্যাল অ্যান্ড ইলেকট্রনিক ইঞ্জিনিয়ারিং EEE (Science)", "ব্যবসায় প্রশাসন BBA (Commerce)", "ইংরেজি (Arts)"]
+            },
+            {
+                id: "jnu",
+                name: "জগন্নাথ বিশ্ববিদ্যালয় (JnU)",
+                acronym: "JnU",
+                category: "সাধারণ",
+                division: "ঢাকা",
+                location: "সদরঘাট, ঢাকা",
+                streams: ["science", "commerce", "arts"],
+                keywords: ["jnu", "jagannath university", "jagannath uni", "জগন্নাথ বিশ্ববিদ্যালয়", "জবি"],
+                image: "",
+                description: "জগন্নাথ বিশ্ববিদ্যালয় পুরান ঢাকার সদরঘাটে অবস্থিত একটি ঐতিহ্যবাহী সরকারি বিশ্ববিদ্যালয়।",
+                requirements: "• নিজস্ব ইউনিটভিত্তিক ভর্তি পরীক্ষার মাধ্যমে শিক্ষার্থী ভর্তি নেওয়া হয়।\n• GPA শর্ত ইউনিট অনুযায়ী ভর্তি বিজ্ঞপ্তিতে দেখুন।",
+                subjects: ["কম্পিউটার সায়েন্স অ্যান্ড ইঞ্জিনিয়ারিং CSE (Science)", "পদার্থবিজ্ঞান (Science)", "হিসাববিজ্ঞান (Commerce)", "ব্যবস্থাপনা (Commerce)", "বাংলা (Arts)", "ইংরেজি (Arts)"]
+            },
+            {
+                id: "ju",
+                name: "জাহাঙ্গীরনগর বিশ্ববিদ্যালয় (JU)",
+                acronym: "JU",
+                category: "সাধারণ",
+                division: "ঢাকা",
+                location: "সাভার, ঢাকা",
+                streams: ["science", "commerce", "arts"],
+                keywords: ["ju", "jahangirnagar university", "jahangirnagar uni", "জাহাঙ্গীরনগর বিশ্ববিদ্যালয়", "জাবি", "সাভার"],
+                image: "",
+                description: "জাহাঙ্গীরনগর বিশ্ববিদ্যালয় সাভারে অবস্থিত সম্পূর্ণ আবাসিক ও প্রাকৃতিক সৌন্দর্যে ভরপুর একটি সরকারি বিশ্ববিদ্যালয়।",
+                requirements: "• নিজস্ব ইউনিটভিত্তিক ভর্তি পরীক্ষার মাধ্যমে শিক্ষার্থী ভর্তি নেওয়া হয়।\n• GPA শর্ত ইউনিট অনুযায়ী ভর্তি বিজ্ঞপ্তিতে দেখুন।",
+                subjects: ["কম্পিউটার সায়েন্স অ্যান্ড ইঞ্জিনিয়ারিং CSE (Science)", "ফার্মেসি (Science)", "অর্থনীতি (Arts)", "ব্যবস্থাপনা (Commerce)", "বাংলা (Arts)", "ইংরেজি (Arts)"]
+            },
+            {
+                id: "mist",
+                name: "মিলিটারি ইনস্টিটিউট অব সায়েন্স অ্যান্ড টেকনোলজি (MIST)",
+                acronym: "MIST",
+                category: "প্রকৌশল",
+                division: "ঢাকা",
+                location: "মিরপুর সেনানিবাস, ঢাকা",
+                streams: ["science"],
+                keywords: ["mist", "military institute of science and technology", "মিস্ট", "মিলিটারি ইনস্টিটিউট"],
+                image: "",
+                description: "মিস্ট মিরপুর সেনানিবাসে অবস্থিত সশস্ত্র বাহিনী পরিচালিত একটি প্রকৌশল ও প্রযুক্তি বিশ্ববিদ্যালয়।",
+                requirements: "• নিজস্ব ভর্তি পরীক্ষার মাধ্যমে সামরিক ও বেসামরিক শিক্ষার্থী ভর্তি নেওয়া হয়।\n• গণিত, পদার্থ ও রসায়নে ভালো ফলাফল প্রয়োজন, বিস্তারিত ভর্তি বিজ্ঞপ্তিতে দেখুন।",
+                subjects: ["কম্পিউটার সায়েন্স অ্যান্ড ইঞ্জিনিয়ারিং CSE (Science)", "ইলেকট্রিক্যাল, ইলেকট্রনিক ও কমিউনিকেশন ইঞ্জিনিয়ারিং EECE (Science)", "মেকানিক্যাল ইঞ্জিনিয়ারিং (Science)", "সিভিল ইঞ্জিনিয়ারিং (Science)", "আর্কিটেকচার (Science)"]
+            },
+            {
+                id: "iut",
+                name: "ইসলামিক ইউনিভার্সিটি অব টেকনোলজি (IUT)",
+                acronym: "IUT",
+                category: "প্রকৌশল",
+                division: "ঢাকা",
+                location: "বোর্ড বাজার, গাজীপুর",
+                streams: ["science"],
+                keywords: ["iut", "islamic university of technology", "আইইউটি", "গাজীপুর"],
+                image: "",
+                description: "আইইউটি ওআইসি (OIC)-এর একটি উপ-সংস্থা, গাজীপুরে অবস্থিত আন্তর্জাতিক মানের প্রকৌশল ও প্রযুক্তি বিশ্ববিদ্যালয়।",
+                requirements: "• নিজস্ব ভর্তি পরীক্ষার মাধ্যমে শিক্ষার্থী ভর্তি নেওয়া হয়।\n• গণিত, পদার্থ ও রসায়নে ভালো ফলাফল প্রয়োজন, বিস্তারিত ভর্তি বিজ্ঞপ্তিতে দেখুন।",
+                subjects: ["কম্পিউটার সায়েন্স অ্যান্ড ইঞ্জিনিয়ারিং CSE (Science)", "ইলেকট্রিক্যাল অ্যান্ড ইলেকট্রনিক ইঞ্জিনিয়ারিং EEE (Science)", "মেকানিক্যাল ইঞ্জিনিয়ারিং (Science)", "সিভিল ইঞ্জিনিয়ারিং (Science)"]
+            },
+            {
+                id: "hstu",
+                name: "হাজী মোহাম্মদ দানেশ বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয় (HSTU)",
+                acronym: "HSTU",
+                category: "বিজ্ঞান ও প্রযুক্তি",
+                division: "রংপুর",
+                location: "বাসেরহাট, দিনাজপুর",
+                streams: ["science", "commerce"],
+                keywords: ["hstu", "hajee mohammad danesh", "danesh university", "হাবিপ্রবি", "দিনাজপুর"],
+                image: "",
+                description: "হাজী মোহাম্মদ দানেশ বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয় দিনাজপুরে অবস্থিত কৃষি ও প্রযুক্তিভিত্তিক একটি সরকারি বিশ্ববিদ্যালয়।",
+                requirements: "• ভর্তি পদ্ধতি (গুচ্ছ বা নিজস্ব) বছর অনুযায়ী ভিন্ন হতে পারে, অফিসিয়াল বিজ্ঞপ্তি দেখুন।\n• GPA শর্ত বিজ্ঞপ্তিতে দেখুন।",
+                subjects: ["কৃষি (Science)", "কম্পিউটার সায়েন্স অ্যান্ড ইঞ্জিনিয়ারিং CSE (Science)", "ভেটেরিনারি সায়েন্স (Science)", "ব্যবসায় প্রশাসন (Commerce)"]
+            },
+            {
+                id: "nstu",
+                name: "নোয়াখালী বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয় (NSTU)",
+                acronym: "NSTU",
+                category: "বিজ্ঞান ও প্রযুক্তি",
+                division: "চট্টগ্রাম",
+                location: "সোনাপুর, নোয়াখালী",
+                streams: ["science", "commerce"],
+                keywords: ["nstu", "noakhali science and technology university", "নোয়াখালী বিজ্ঞান", "নোবিপ্রবি"],
+                image: "",
+                description: "নোয়াখালী বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয় নোয়াখালীতে অবস্থিত একটি সরকারি বিজ্ঞান ও প্রযুক্তিভিত্তিক বিশ্ববিদ্যালয়।",
+                requirements: "• নিজস্ব ভর্তি পরীক্ষার মাধ্যমে শিক্ষার্থী ভর্তি নেওয়া হয়।\n• GPA শর্ত ইউনিট অনুযায়ী ভর্তি বিজ্ঞপ্তিতে দেখুন।",
+                subjects: ["কম্পিউটার সায়েন্স অ্যান্ড ইঞ্জিনিয়ারিং CSE (Science)", "ফার্মেসি (Science)", "ফিশারিজ অ্যান্ড মেরিন সায়েন্স (Science)", "ব্যবসায় প্রশাসন (Commerce)"]
+            },
+            {
+                id: "sbau",
+                name: "শেরেবাংলা কৃষি বিশ্ববিদ্যালয় (SAU, Dhaka)",
+                acronym: "SAU",
+                category: "কৃষি",
+                division: "ঢাকা",
+                location: "শেরেবাংলা নগর, ঢাকা",
+                streams: ["science"],
+                keywords: ["sau", "sher-e-bangla agricultural university", "sherebangla", "শেরেবাংলা কৃষি", "শেকৃবি"],
+                image: "",
+                description: "শেরেবাংলা কৃষি বিশ্ববিদ্যালয় ঢাকার শেরেবাংলা নগরে অবস্থিত কৃষি শিক্ষার একটি প্রধান সরকারি বিশ্ববিদ্যালয়।",
+                requirements: "• কৃষি গুচ্ছ ভর্তি পরীক্ষার মাধ্যমে ভর্তি নেওয়া হয়, বিজ্ঞপ্তি দেখুন।\n• বিজ্ঞান বিভাগ থেকে উত্তীর্ণ হতে হবে।",
+                subjects: ["কৃষি (Science)", "এগ্রিবিজনেস (Science)", "অ্যানিমেল সায়েন্স (Science)", "ফুড টেকনোলজি (Science)"]
+            },
+            {
+                id: "bsmrau",
+                name: "বঙ্গবন্ধু শেখ মুজিবুর রহমান কৃষি বিশ্ববিদ্যালয় (BSMRAU)",
+                acronym: "BSMRAU",
+                category: "কৃষি",
+                division: "ঢাকা",
+                location: "সালনা, গাজীপুর",
+                streams: ["science"],
+                keywords: ["bsmrau", "bangabandhu sheikh mujibur rahman agricultural university", "gazipur agricultural", "বঙ্গবন্ধু কৃষি", "বশেমুরকৃবি", "গাজীপুর"],
+                image: "",
+                description: "বঙ্গবন্ধু শেখ মুজিবুর রহমান কৃষি বিশ্ববিদ্যালয় গাজীপুরের সালনায় অবস্থিত একটি সরকারি কৃষি বিশ্ববিদ্যালয়।",
+                requirements: "• কৃষি গুচ্ছ ভর্তি পরীক্ষার মাধ্যমে ভর্তি নেওয়া হয়, বিজ্ঞপ্তি দেখুন।\n• বিজ্ঞান বিভাগ থেকে উত্তীর্ণ হতে হবে।",
+                subjects: ["কৃষি (Science)", "এগ্রিকালচারাল ইঞ্জিনিয়ারিং (Science)", "ফিশারিজ (Science)", "ফুড সায়েন্স (Science)"]
+            },
+            {
+                id: "bmu",
+                name: "বাংলাদেশ মেডিকেল বিশ্ববিদ্যালয় (BMU)",
+                acronym: "BMU",
+                category: "মেডিকেল",
+                division: "ঢাকা",
+                location: "শাহবাগ, ঢাকা",
+                streams: ["science"],
+                keywords: ["bmu", "bangladesh medical university", "bsmmu", "মেডিকেল বিশ্ববিদ্যালয়", "পিজি হাসপাতাল"],
+                image: "",
+                description: "বাংলাদেশ মেডিকেল বিশ্ববিদ্যালয় (পূর্বনাম BSMMU) শাহবাগে অবস্থিত স্নাতকোত্তর চিকিৎসা শিক্ষার দেশের প্রধান সরকারি বিশ্ববিদ্যালয়।",
+                requirements: "• এটি মূলত স্নাতকোত্তর (MD/MS/Diploma ইত্যাদি) পর্যায়ের প্রতিষ্ঠান, এইচএসসির পর সরাসরি ভর্তির সুযোগ সাধারণত নেই।\n• ভর্তির যোগ্যতা সাধারণত MBBS/BDS ডিগ্রি ও নির্ধারিত পরীক্ষা, বিস্তারিত অফিসিয়াল বিজ্ঞপ্তিতে দেখুন।",
+                subjects: ["মেডিসিন (Science)", "সার্জারি (Science)", "গাইনি অ্যান্ড অবস (Science)", "পেডিয়াট্রিক্স (Science)", "বায়োকেমিস্ট্রি (Science)"]
+            },
+
+            // --- আরও প্রাইভেট বিশ্ববিদ্যালয়সমূহ ---
+            {
+                id: "nsu",
+                name: "নর্থ সাউথ ইউনিভার্সিটি (NSU)",
+                acronym: "NSU",
+                category: "প্রাইভেট",
+                division: "ঢাকা",
+                location: "বসুন্ধরা, ঢাকা",
+                streams: ["science", "commerce", "arts"],
+                keywords: ["nsu", "north south university", "north south", "নর্থ সাউথ"],
+                image: "",
+                description: "নর্থ সাউথ ইউনিভার্সিটি বাংলাদেশের প্রথম প্রাইভেট বিশ্ববিদ্যালয় (১৯৯২), ঢাকার বসুন্ধরায় অবস্থিত।",
+                requirements: "• নিজস্ব ভর্তি পরীক্ষার মাধ্যমে শিক্ষার্থী ভর্তি নেওয়া হয়।\n• ন্যূনতম GPA ও স্কলারশিপের শর্ত অফিসিয়াল ওয়েবসাইটে দেখুন।",
+                subjects: ["কম্পিউটার সায়েন্স অ্যান্ড ইঞ্জিনিয়ারিং CSE (Science)", "ইলেকট্রনিক্স অ্যান্ড টেলিকমিউনিকেশন ETE (Science)", "ফার্মেসি (Science)", "ব্যবসায় প্রশাসন BBA (Commerce)", "ইংরেজি (Arts)"]
+            },
+            {
+                id: "aiub",
+                name: "আমেরিকান ইন্টারন্যাশনাল ইউনিভার্সিটি-বাংলাদেশ (AIUB)",
+                acronym: "AIUB",
+                category: "প্রাইভেট",
+                division: "ঢাকা",
+                location: "কুড়িল, ঢাকা",
+                streams: ["science", "commerce", "arts"],
+                keywords: ["aiub", "american international university bangladesh", "আমেরিকান ইন্টারন্যাশনাল"],
+                image: "",
+                description: "এআইইউবি ঢাকার কুড়িলে অবস্থিত একটি স্বনামধন্য প্রাইভেট বিশ্ববিদ্যালয়।",
+                requirements: "• নিজস্ব ভর্তি পরীক্ষার মাধ্যমে শিক্ষার্থী ভর্তি নেওয়া হয়।\n• ন্যূনতম GPA ও স্কলারশিপের শর্ত অফিসিয়াল ওয়েবসাইটে দেখুন।",
+                subjects: ["কম্পিউটার সায়েন্স অ্যান্ড ইঞ্জিনিয়ারিং CSE (Science)", "ইলেকট্রিক্যাল অ্যান্ড ইলেকট্রনিক ইঞ্জিনিয়ারিং EEE (Science)", "ব্যবসায় প্রশাসন BBA (Commerce)", "ইংরেজি (Arts)"]
+            },
+            {
+                id: "ewu",
+                name: "ইস্ট ওয়েস্ট ইউনিভার্সিটি (EWU)",
+                acronym: "EWU",
+                category: "প্রাইভেট",
+                division: "ঢাকা",
+                location: "আফতাবনগর, ঢাকা",
+                streams: ["science", "commerce", "arts"],
+                keywords: ["ewu", "east west university", "east west", "ইস্ট ওয়েস্ট"],
+                image: "",
+                description: "ইস্ট ওয়েস্ট ইউনিভার্সিটি ঢাকার আফতাবনগরে অবস্থিত একটি স্বনামধন্য প্রাইভেট বিশ্ববিদ্যালয়।",
+                requirements: "• নিজস্ব ভর্তি পরীক্ষার মাধ্যমে শিক্ষার্থী ভর্তি নেওয়া হয়।\n• ন্যূনতম GPA ও স্কলারশিপের শর্ত অফিসিয়াল ওয়েবসাইটে দেখুন।",
+                subjects: ["কম্পিউটার সায়েন্স অ্যান্ড ইঞ্জিনিয়ারিং CSE (Science)", "ইলেকট্রনিক্স অ্যান্ড কমিউনিকেশন ইঞ্জিনিয়ারিং ECE (Science)", "ফার্মেসি (Science)", "ব্যবসায় প্রশাসন BBA (Commerce)", "ইংরেজি (Arts)"]
+            },
+            {
+                id: "diu",
+                name: "ড্যাফোডিল ইন্টারন্যাশনাল ইউনিভার্সিটি (DIU)",
+                acronym: "DIU",
+                category: "প্রাইভেট",
+                division: "ঢাকা",
+                location: "ধানমন্ডি / আশুলিয়া, ঢাকা",
+                streams: ["science", "commerce", "arts"],
+                keywords: ["diu", "daffodil international university", "daffodil", "ড্যাফোডিল"],
+                image: "",
+                description: "ড্যাফোডিল ইন্টারন্যাশনাল ইউনিভার্সিটি ঢাকার একটি জনপ্রিয় প্রাইভেট বিশ্ববিদ্যালয়।",
+                requirements: "• নিজস্ব ভর্তি প্রক্রিয়ার মাধ্যমে ভর্তি নেওয়া হয়।\n• ন্যূনতম GPA ও ওয়েভার সুবিধা অফিসিয়াল ওয়েবসাইটে দেখুন।",
+                subjects: ["কম্পিউটার সায়েন্স অ্যান্ড ইঞ্জিনিয়ারিং CSE (Science)", "সফটওয়্যার ইঞ্জিনিয়ারিং (Science)", "ইলেকট্রিক্যাল অ্যান্ড ইলেকট্রনিক ইঞ্জিনিয়ারিং EEE (Science)", "ব্যবসায় প্রশাসন BBA (Commerce)", "ইংরেজি (Arts)"]
+            },
+            {
+                id: "uap",
+                name: "ইউনিভার্সিটি অব এশিয়া প্যাসিফিক (UAP)",
+                acronym: "UAP",
+                category: "প্রাইভেট",
+                division: "ঢাকা",
+                location: "ধানমন্ডি, ঢাকা",
+                streams: ["science", "commerce", "arts"],
+                keywords: ["uap", "university of asia pacific", "asia pacific", "এশিয়া প্যাসিফিক"],
+                image: "",
+                description: "ইউনিভার্সিটি অব এশিয়া প্যাসিফিক ঢাকার ধানমন্ডিতে অবস্থিত, বিশেষ করে প্রকৌশল ও আর্কিটেকচার শিক্ষার জন্য পরিচিত একটি প্রাইভেট বিশ্ববিদ্যালয়।",
+                requirements: "• নিজস্ব ভর্তি পরীক্ষার মাধ্যমে শিক্ষার্থী ভর্তি নেওয়া হয়।\n• ন্যূনতম GPA ও স্কলারশিপের শর্ত অফিসিয়াল ওয়েবসাইটে দেখুন।",
+                subjects: ["কম্পিউটার সায়েন্স অ্যান্ড ইঞ্জিনিয়ারিং CSE (Science)", "সিভিল ইঞ্জিনিয়ারিং (Science)", "আর্কিটেকচার (Science)", "ব্যবসায় প্রশাসন BBA (Commerce)", "ইংরেজি (Arts)"]
+            },
+            {
+                id: "bubt",
+                name: "বাংলাদেশ ইউনিভার্সিটি অব বিজনেস অ্যান্ড টেকনোলজি (BUBT)",
+                acronym: "BUBT",
+                category: "প্রাইভেট",
+                division: "ঢাকা",
+                location: "রূপনগর, মিরপুর-২, ঢাকা",
+                streams: ["science", "commerce", "arts"],
+                keywords: ["bubt", "bangladesh university of business and technology", "business and technology", "বিইউবিটি"],
+                image: "",
+                description: "বিইউবিটি ঢাকার মিরপুরের রূপনগরে অবস্থিত একটি প্রাইভেট বিশ্ববিদ্যালয়।",
+                requirements: "• নিজস্ব ভর্তি প্রক্রিয়ার মাধ্যমে ভর্তি নেওয়া হয়।\n• ন্যূনতম GPA ও ওয়েভার সুবিধা অফিসিয়াল ওয়েবসাইটে দেখুন।",
+                subjects: ["কম্পিউটার সায়েন্স অ্যান্ড ইঞ্জিনিয়ারিং CSE (Science)", "ইলেকট্রিক্যাল অ্যান্ড ইলেকট্রনিক ইঞ্জিনিয়ারিং EEE (Science)", "ব্যবসায় প্রশাসন BBA (Commerce)", "ইংরেজি (Arts)"]
+            },
+            {
+                id: "gub",
+                name: "গ্রীন ইউনিভার্সিটি অব বাংলাদেশ (GUB)",
+                acronym: "GUB",
+                category: "প্রাইভেট",
+                division: "ঢাকা",
+                location: "পূর্বাচল, ঢাকা",
+                streams: ["science", "commerce", "arts"],
+                keywords: ["gub", "green university", "green university of bangladesh", "গ্রীন ইউনিভার্সিটি"],
+                image: "",
+                description: "গ্রীন ইউনিভার্সিটি অব বাংলাদেশ ঢাকার পূর্বাচলে অবস্থিত একটি প্রাইভেট বিশ্ববিদ্যালয়।",
+                requirements: "• নিজস্ব ভর্তি প্রক্রিয়ার মাধ্যমে ভর্তি নেওয়া হয়।\n• ন্যূনতম GPA ও ওয়েভার সুবিধা অফিসিয়াল ওয়েবসাইটে দেখুন।",
+                subjects: ["কম্পিউটার সায়েন্স অ্যান্ড ইঞ্জিনিয়ারিং CSE (Science)", "ইলেকট্রিক্যাল অ্যান্ড ইলেকট্রনিক ইঞ্জিনিয়ারিং EEE (Science)", "ব্যবসায় প্রশাসন BBA (Commerce)", "ইংরেজি (Arts)"]
+            },
+            {
+                id: "iub",
+                name: "ইন্ডিপেনডেন্ট ইউনিভার্সিটি, বাংলাদেশ (IUB)",
+                acronym: "IUB",
+                category: "প্রাইভেট",
+                division: "ঢাকা",
+                location: "বসুন্ধরা, ঢাকা",
+                streams: ["science", "commerce", "arts"],
+                keywords: ["iub", "independent university bangladesh", "independent university", "ইন্ডিপেনডেন্ট ইউনিভার্সিটি"],
+                image: "",
+                description: "ইন্ডিপেনডেন্ট ইউনিভার্সিটি, বাংলাদেশ ঢাকার বসুন্ধরায় অবস্থিত একটি স্বনামধন্য প্রাইভেট বিশ্ববিদ্যালয়।",
+                requirements: "• নিজস্ব ভর্তি পরীক্ষার মাধ্যমে শিক্ষার্থী ভর্তি নেওয়া হয়।\n• ন্যূনতম GPA ও স্কলারশিপের শর্ত অফিসিয়াল ওয়েবসাইটে দেখুন।",
+                subjects: ["কম্পিউটার সায়েন্স অ্যান্ড ইঞ্জিনিয়ারিং CSE (Science)", "ইলেকট্রিক্যাল অ্যান্ড ইলেকট্রনিক ইঞ্জিনিয়ারিং EEE (Science)", "ব্যবসায় প্রশাসন BBA (Commerce)", "ইংরেজি (Arts)"]
             }
 
-            /* 💡 উপরে দেওয়া নিয়মে আপনি চাইলে আরও নতুন ভার্সিটির কোড ব্লক যোগ করতে পারেন */
+            /* 💡 উপরে দেওয়া নিয়মে আপনি চাইলে আরও নতুন ভার্সিটির কোড ব্লক যোগ করতে পারেন */
         ];
 
 
         // =========================================================================
-        // ⚙️ ওয়েবসাইট ফিল্টারিং ও রেন্ডারিং ফাংশনসমূহ (এখানে এডিট করার প্রয়োজন নেই)
+        // ⚙️ ওয়েবসাইট ফিল্টারিং ও রেন্ডারিং ফাংশনসমূহ (এখানে এডিট করার প্রয়োজন নেই)
         // =========================================================================
 
         // ১. কার্ড রেন্ডার করা (হোম পেইজে ভার্সিটির লিস্ট দেখাবে)
@@ -357,9 +779,9 @@
             const grid = document.getElementById('university-grid');
             const noResults = document.getElementById('no-results');
             const resultCount = document.getElementById('result-count');
-            
+
             grid.innerHTML = '';
-            resultCount.innerText = `মোট প্রাপ্ত বিশ্ববিদ্যালয়: ${dataList.length}টি`;
+            resultCount.innerText = `মোট প্রাপ্ত বিশ্ববিদ্যালয়: ${dataList.length}টি`;
 
             if (dataList.length === 0) {
                 noResults.classList.remove('hidden');
@@ -372,7 +794,7 @@
 
                     card.innerHTML = `
                         <div>
-                            <img src="${uni.image}" alt="${uni.name}" class="w-full h-40 object-cover">
+                            <img src="${getImage(uni)}" alt="${uni.name}" class="w-full h-40 object-cover" onerror="this.onerror=null;this.src='${DEFAULT_IMAGES[0]}'">
                             <div class="p-4">
                                 <h3 class="text-lg font-bold text-gray-800 leading-snug mb-1">${uni.name}</h3>
                                 <span class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-0.5 rounded mb-2">${uni.category}</span>
@@ -399,16 +821,10 @@
             const locationVal = document.getElementById('location-filter').value;
 
             const filtered = universities.filter(uni => {
-                // গ্রুপ বা শাখা ম্যাচিং
                 const matchStream = (streamVal === 'all') || (uni.streams && uni.streams.includes(streamVal));
-                
-                // ক্যাটাগরি ম্যাচিং
                 const matchCategory = (categoryVal === 'all') || (uni.category === categoryVal);
-                
-                // লোকেশন / বিভাগ ম্যাচিং (সরাসরি টেক্সট মিলানো)
                 const matchLocation = (locationVal === 'all') || (uni.division && uni.division.trim() === locationVal.trim());
 
-                // স্মার্ট সার্চ ম্যাচিং (কাছাকাছি নাম, অ্যাক্রোনিম বা কীওয়ার্ড দিয়ে সার্চ)
                 let matchSearch = false;
                 if (!searchVal) {
                     matchSearch = true;
@@ -436,20 +852,24 @@
             document.getElementById('uni-name').innerText = uni.name;
             document.getElementById('uni-category').innerText = uni.category;
             document.getElementById('uni-location').innerText = "📍 " + uni.location + " (" + uni.division + " বিভাগ)";
-            document.getElementById('uni-image').src = uni.image;
-            document.getElementById('uni-description').innerText = uni.description || "তথ্য উপলব্ধ নয়।";
-            document.getElementById('uni-requirements').innerText = uni.requirements || "তথ্য উপলব্ধ নয়।";
+
+            const detailImg = document.getElementById('uni-image');
+            detailImg.onerror = function () { this.onerror = null; this.src = DEFAULT_IMAGES[0]; };
+            detailImg.src = getImage(uni);
+
+            document.getElementById('uni-description').innerText = uni.description || "তথ্য উপলব্ধ নয়।";
+            document.getElementById('uni-requirements').innerText = uni.requirements || "তথ্য উপলব্ধ নয়।";
 
             const subjectsList = document.getElementById('uni-subjects');
             subjectsList.innerHTML = '';
-            if(uni.subjects && uni.subjects.length > 0) {
+            if (uni.subjects && uni.subjects.length > 0) {
                 uni.subjects.forEach(subject => {
                     const li = document.createElement('li');
                     li.innerText = subject;
                     subjectsList.appendChild(li);
                 });
             } else {
-                subjectsList.innerHTML = '<li>কোনো বিষয় যুক্ত করা হয়নি।</li>';
+                subjectsList.innerHTML = '<li>কোনো বিষয় যুক্ত করা হয়নি।</li>';
             }
 
             document.getElementById('home-page').classList.add('hidden');
@@ -457,7 +877,7 @@
             window.scrollTo(0, 0);
         }
 
-        // ৪. হোম পেইজে ফিরে যাওয়ার ফাংশন
+        // ৪. হোম পেইজে ফিরে যাওয়ার ফাংশন
         function showHomePage() {
             document.getElementById('details-page').classList.add('hidden');
             document.getElementById('home-page').classList.remove('hidden');
